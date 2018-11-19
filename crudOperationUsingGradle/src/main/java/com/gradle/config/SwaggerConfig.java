@@ -29,11 +29,11 @@ public class SwaggerConfig {
 
 	private ApiInfo getApiInfo() {
 	    return new ApiInfo(
-	            "TITLE",
-	            "DESCIPRION",
-	            "VERSION",
+	            "Empoyee Management",
+	            "Employee Information Online",
+	            "1.0",
 	            "TERMS OF SERVICE URL",
-	            new Contact("NAME","URL","EMAIL"),
+	            new Contact("Nitish Nirala","https://springframework.guru/about/","abc@gmail.com"),
 	            "LICENSE",
 	            "LICENSE URL",
 	            Collections.emptyList()
