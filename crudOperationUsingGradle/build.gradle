@@ -43,3 +43,14 @@ dependencies {
 	compile "io.springfox:springfox-swagger-ui:2.9.2"
     testCompile group: 'org.mockito', name: 'mockito-core', version: '2.21.0'	   
 }
+
+test.onlyIf {
+	Boolean.getBoolean('skip.tests')
+}
+sonarqube {
+ properties {
+  property "sonar.host.url", "http://localhost:9000/"
+   }
+}
+
+defaultTasks 'clean', 'build', 'sonarqube'
